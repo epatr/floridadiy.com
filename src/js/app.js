@@ -2,3 +2,7 @@
 
 // Say hello
 console.log("🦊 Hello! Edit me in src/js/app.js");
+
+import 'jquery';
+import 'popper.js';
+import 'bootstrap';

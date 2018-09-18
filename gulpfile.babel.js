@@ -5,8 +5,8 @@ import log from "fancy-log";
 import pluginError from "plugin-error";
 import flatten from "gulp-flatten";
 import postcss from "gulp-postcss";
-import cssImport from "postcss-import";
-import cssnext from "postcss-cssnext";
+/*import cssImport from "postcss-import";
+import cssnext from "postcss-cssnext";*/
 import BrowserSync from "browser-sync";
 import webpack from "webpack";
 import webpackConfig from "./webpack.conf";
