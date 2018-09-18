@@ -47,7 +47,7 @@ gulp.task("css", () => (
     .pipe(sass({
       outputStyle: "nested",
       precision: 10,
-      includePaths: ["node_modules"],
+      includePaths: ["./node_modules"],
     }))
     .pipe(postcss([autoprefixer()]))
     .pipe(cssNano())
