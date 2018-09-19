@@ -1,8 +1,44 @@
-@import "bootstrap/scss/bootstrap";
 
-html, body {
-    @extend .h-100;
-}
+$theme-colors: (
+    "primary": #815997,
+);
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/code";
+@import "bootstrap/scss/grid";
+//@import "bootstrap/scss/tables";
+//@import "bootstrap/scss/forms";
+//@import "bootstrap/scss/buttons";
+//@import "bootstrap/scss/transitions";
+//@import "bootstrap/scss/dropdown";
+//@import "bootstrap/scss/button-group";
+//@import "bootstrap/scss/input-group";
+//@import "bootstrap/scss/custom-forms";
+//@import "bootstrap/scss/nav";
+//@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/card";
+//@import "bootstrap/scss/breadcrumb";
+//@import "bootstrap/scss/pagination";
+//@import "bootstrap/scss/badge";
+//@import "bootstrap/scss/jumbotron";
+//@import "bootstrap/scss/alert";
+//@import "bootstrap/scss/progress";
+//@import "bootstrap/scss/media";
+@import "bootstrap/scss/list-group";
+//@import "bootstrap/scss/close";
+//@import "bootstrap/scss/modal";
+//@import "bootstrap/scss/tooltip";
+//@import "bootstrap/scss/popover";
+//@import "bootstrap/scss/carousel";
+@import "bootstrap/scss/utilities";
+//@import "bootstrap/scss/print";
+
 
 body {
     background: #efefef;
@@ -10,18 +46,18 @@ body {
 
 
 .display-1 {
-    font-size: $display1-size * 0.7;
+    font-size: $display1-size * 0.6;
 }
   
 @include media-breakpoint-up(sm) {
     .display-1 {
-        font-size: $display1-size * 0.8;
+        font-size: $display1-size * 0.75;
     }
 }
 
 @include media-breakpoint-up(md) {
     .display-1 {
-        font-size: $display1-size * 0.9;
+        font-size: $display1-size * 0.88;
     }
 }
 
@@ -37,3 +73,31 @@ body {
     box-shadow:         -3px 3px 10px 0px rgba(50, 50, 50, 0.15);
 }
 
+// Footer
+//
+.social-icon {
+    font-size: 1.25em;
+    padding: 0 10px;
+    a {
+        color: $gray-600;
+        &:hover {
+            color: $gray-800;
+        }
+    }
+}
+
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em;
+}
+
+.svg-inline--fa.fa-w-18 {
+    width: 1.125em;
+}
+
+.svg-inline--fa.fa-w-16 {
+    width: 1em;
+}
