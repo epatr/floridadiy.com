@@ -8,8 +8,32 @@ body {
     background: #efefef;
 }
 
+
+.display-1 {
+    font-size: $display1-size * 0.7;
+}
+  
+@include media-breakpoint-up(sm) {
+    .display-1 {
+        font-size: $display1-size * 0.8;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .display-1 {
+        font-size: $display1-size * 0.9;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .display-1 {
+        font-size: $display1-size;
+    }
+}
+
 .box-shadow {
     -webkit-box-shadow: -3px 3px 10px 0px rgba(50, 50, 50, 0.15);
     -moz-box-shadow:    -3px 3px 10px 0px rgba(50, 50, 50, 0.15);
     box-shadow:         -3px 3px 10px 0px rgba(50, 50, 50, 0.15);
 }
+
